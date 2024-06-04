@@ -1,10 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
 import './index.css'
+import './main.css'
+import Questions from './components/questions/questions'
+import Timer from './components/timer/timer'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+export default function Main() {
+  return (
+    <div className='main'>
+      <div className='header'>
+        <h1>Тестирование</h1>
+        <Timer />
+      </div>
+      <Questions />
+    </div>
+  )
+}

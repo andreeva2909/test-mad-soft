@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: white;
+  color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,56 +14,55 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0 0 0 50px;
+  padding: 0;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 50px;
   line-height: 1.1;
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: normal;
   font-family: inherit;
-  background-color: #1a1a1a;
+  margin-top: 20px;
+  padding: 5px 40px 10px 40px;
+  background-color: #B92A35;
+  color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+button:disabled {
+  background-color: #61272c;
+  cursor: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input {
+  margin-right: 20px;
+}
+
+input[type='radio']:checked {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px; 
+  border-radius: 50%;
+  background-color: #B92A35;
+}
+
+textarea {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 }

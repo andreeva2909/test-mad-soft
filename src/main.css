@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    width: 500px; 
+}
+
+.timer-wrapper {
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: 45px;
+  width: auto;
+  height: auto;
+}
+
+.progress-bar {
+  display: flex;
+}
+
+.progress-value {
+  width: 100px;
+  height: 10px;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 7px;
+  background-color: gray;
+  border: none;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.question {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.possible-answers {
+  font-size: 20px;
+  font-weight: normal;
+  display: block;
+  margin-top: 10px;
+}
+
+.possible-answer {
+  margin-bottom: 10px;
+}

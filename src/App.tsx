@@ -1,14 +1,9 @@
-import './App.css'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Main from './main.tsx'
 
-function App() {
-
-  return (
-    <>
-      <div>
-          <p>Hello world</p>
-      </div>
-    </>
-  )
-}
-
-export default App
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>,
+)
